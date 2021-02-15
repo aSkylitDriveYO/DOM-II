@@ -1,15 +1,14 @@
 // Your code goes here
 
 
-const imageFunBus = document.getElementById("funBus");
+const imageFunBus = document.querySelector(".intro");
 const SignUpButton = document.querySelectorAll (".btn");
 const heading = document.getElementsByTagName("header");
 
-/*
-imageFunBus.onmouseover = function(){
+
+imageFunBus.addEventListener("mouseover", () => {
     imageFunBus.style.display='none';
-}
-*/
+})
 
 SignUpButton.forEach(item=> {
     item.addEventListener('click', () => {
